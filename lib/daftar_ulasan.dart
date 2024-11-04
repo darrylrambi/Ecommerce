@@ -19,7 +19,7 @@ class DaftarUlasan extends StatelessWidget {
         ),
       ),
       body: SingleChildScrollView(
-        child: Row(
+        child: Column(
           children: [
             ReviewCard(username: 'Darryl', rating: 5),
             ReviewCard(username: 'Darryl', rating: 5),

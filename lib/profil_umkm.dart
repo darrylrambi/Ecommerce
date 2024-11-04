@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'daftar_ulasan.dart';
+import 'component/mini_profile_with_rating.dart';
 
 class ProfilUMKM extends StatelessWidget {
   const ProfilUMKM({super.key});
@@ -18,10 +19,10 @@ class ProfilUMKM extends StatelessWidget {
                 fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
           ),
         ),
-        body: 
-        SingleChildScrollView(
+        body: SingleChildScrollView(
           child: Column(
             children: [
+              MiniProfile(username: 'Asep Montir', rating: 5),
               Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
