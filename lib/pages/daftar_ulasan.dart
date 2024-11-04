@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'component/review_card.dart';
-import 'component/appbar.dart';
+import '../component/review_card.dart';
+import '../component/appbar.dart';
 
 class DaftarUlasan extends StatelessWidget {
   const DaftarUlasan({super.key});

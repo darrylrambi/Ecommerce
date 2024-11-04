@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tubes_ppb/informasi_pemesanan.dart';
-import 'package:tubes_ppb/profil_umkm.dart';
+import 'package:tubes_ppb/pages/informasi_pemesanan.dart';
+import 'package:tubes_ppb/pages/profil_umkm.dart';
 import 'dashboard_full_produk.dart';
 import 'dashboard_full_makanan.dart';
 import 'dashboard_full_minuman.dart';

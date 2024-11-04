@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'daftar_ulasan.dart';
-import 'component/mini_profile_with_rating.dart';
-import 'component/appbar.dart';
-import 'component/formfield.dart';
+import '../component/mini_profile_with_rating.dart';
+import '../component/appbar.dart';
+import '../component/formfield.dart';
 
 class ProfilUMKM extends StatelessWidget {
   const ProfilUMKM({super.key});
