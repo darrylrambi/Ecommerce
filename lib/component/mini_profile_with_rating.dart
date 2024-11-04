@@ -11,10 +11,6 @@ class MiniProfile extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(8.0),
       margin: const EdgeInsets.symmetric(vertical: 16.0),
-      decoration: BoxDecoration(
-        border: Border.all(color: Colors.blue),
-        borderRadius: BorderRadius.circular(8.0),
-      ),
       child: Row(
         children: [
           CircleAvatar(

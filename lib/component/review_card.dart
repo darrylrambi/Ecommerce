@@ -34,7 +34,7 @@ class ReviewCard extends StatelessWidget {
       margin: const EdgeInsets.all(8.0),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8.0),
-        side: BorderSide(color: Colors.blue, width: 1),
+        side: BorderSide(color: Color.fromRGBO(76, 175, 80, 1), width: 1),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
