@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class ReadOnlyFormField extends StatelessWidget {
+class CustomFormField extends StatelessWidget {
   final String isi;
   final String label;
   final bool readOnly;
 
-  const ReadOnlyFormField({super.key, required this.isi, required this.label, required this.readOnly});
+  const CustomFormField({super.key, required this.isi, required this.label, required this.readOnly});
 
   @override
   Widget build(BuildContext context) {

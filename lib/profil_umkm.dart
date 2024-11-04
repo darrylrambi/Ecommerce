@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'daftar_ulasan.dart';
 import 'component/mini_profile_with_rating.dart';
 import 'component/appbar.dart';
+import 'component/formfield.dart';
 
 class ProfilUMKM extends StatelessWidget {
   const ProfilUMKM({super.key});
@@ -9,59 +10,25 @@ class ProfilUMKM extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBarUMKMku(titleText: 'Profil UMKM'),
+        appBar: AppBarUMKMku(titleText: 'Profil UMKMku'),
         body: SingleChildScrollView(
           child: Column(
             children: [
               MiniProfile(username: 'Asep Montir', rating: 5),
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-                child: TextFormField(
-                  initialValue: 'asepkun@ganteng.com',
-                  readOnly: true,
-                  decoration: const InputDecoration(
-                    border: UnderlineInputBorder(),
-                    labelText: 'Alamat Email',
-                  ),
-                ),
-              ),
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-                child: TextFormField(
-                  initialValue: '085xxxxxxxxxx',
-                  readOnly: true,
-                  decoration: const InputDecoration(
-                    border: UnderlineInputBorder(),
-                    labelText: 'Nomor Telepon',
-                  ),
-                ),
-              ),
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-                child: TextFormField(
-                  initialValue: 'Jalan kaki',
-                  readOnly: true,
-                  decoration: const InputDecoration(
-                    border: UnderlineInputBorder(),
-                    labelText: 'Alamat',
-                  ),
-                ),
-              ),
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-                child: TextFormField(
-                  initialValue: 'biasanya sih saya suka jualan bunga',
-                  readOnly: true,
-                  decoration: const InputDecoration(
-                    border: UnderlineInputBorder(),
-                    labelText: 'Deskripsi UMKM',
-                  ),
-                ),
-              ),
+              CustomFormField(
+                  isi: 'asepkun@ganteng.com',
+                  label: 'Alamat Email',
+                  readOnly: true),
+              CustomFormField(
+                  isi: '085xxxxxxxxxx', label: 'Nomor Telepon', readOnly: true),
+              CustomFormField(
+                  isi: 'Jalan kaki',
+                  label: 'Alamat',
+                  readOnly: true),
+              CustomFormField(
+                  isi: 'biasanya sih saya suka jualan bunga',
+                  label: 'Deskripsi UMKM',
+                  readOnly: true),
               Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
