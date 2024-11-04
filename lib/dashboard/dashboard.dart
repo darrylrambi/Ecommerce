@@ -24,7 +24,7 @@ class Dashboard extends StatelessWidget {
         actions: <Widget>[
           const SizedBox(width: 10),
           IconButton(
-            icon: const Icon(Icons.search),
+            icon: const Icon(Icons.mail_outline),
             onPressed: () {
               Navigator.push(
                   context,
@@ -35,10 +35,8 @@ class Dashboard extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.person),
             onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const ProfilUMKM()));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const ProfilUMKM()));
             },
           ),
           IconButton(

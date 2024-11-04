@@ -9,7 +9,7 @@ class ProfilUMKM extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBarUMKMku(titleText: 'Daftar Ulasan'),
+        appBar: AppBarUMKMku(titleText: 'Profil UMKM'),
         body: SingleChildScrollView(
           child: Column(
             children: [

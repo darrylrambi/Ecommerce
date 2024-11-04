@@ -39,10 +39,3 @@ class InformasiPemesanan extends StatelessWidget {
     );
   }
 }
-
-// buat test run
-// void main() {
-//   runApp(MaterialApp(
-//     home: InformasiPemesanan(),
-//   ));
-// }
