@@ -22,9 +22,7 @@ class ProfilUMKM extends StatelessWidget {
               CustomFormField(
                   isi: '085xxxxxxxxxx', label: 'Nomor Telepon', readOnly: true),
               CustomFormField(
-                  isi: 'Jalan kaki',
-                  label: 'Alamat',
-                  readOnly: true),
+                  isi: 'Jalan kaki', label: 'Alamat', readOnly: true),
               CustomFormField(
                   isi: 'biasanya sih saya suka jualan bunga',
                   label: 'Deskripsi UMKM',
