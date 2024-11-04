@@ -1,6 +1,7 @@
-import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:timelines/timelines.dart';
+import 'package:tubes_ppb/component/appbar.dart';
+
 
 final List<String> events = [
   'Pesanan Dikonfirmasi',
@@ -16,16 +17,7 @@ class InformasiPemesanan extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: const Color.fromRGBO(76, 175, 80, 1),
-          automaticallyImplyLeading: true,
-          centerTitle: true,
-          title: Text(
-            'Informasi Pemesanan',
-            style: GoogleFonts.montserrat(
-                fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
-          ),
-        ),
+        appBar: AppBarUMKMku(titleText: 'Informasi Pemesanan'),
         body: FixedTimeline.tileBuilder(
           builder: TimelineTileBuilder.connectedFromStyle(
             contentsAlign: ContentsAlign.reverse,

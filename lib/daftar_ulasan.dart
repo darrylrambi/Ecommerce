@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'component/review_card.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'component/appbar.dart';
 
 class DaftarUlasan extends StatelessWidget {
   const DaftarUlasan({super.key});
@@ -8,16 +8,7 @@ class DaftarUlasan extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: const Color.fromRGBO(76, 175, 80, 1),
-        automaticallyImplyLeading: true,
-        centerTitle: true,
-        title: Text(
-          'Daftar Ulasan',
-          style: GoogleFonts.montserrat(
-              fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
-        ),
-      ),
+      appBar: AppBarUMKMku(titleText: 'Daftar Ulasan'),
       body: SingleChildScrollView(
         child: Column(
           children: [
